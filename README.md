@@ -1,0 +1,2 @@
+# Methods
+Given the above design and the following event handler for the “Process the Number” button, write three statements in that handler that call three methods you will write to 1.) Display all the numbers that the inputted number is evenly divisible by in a list box; 2.) Returns whether or not the inputted number is prime or not (a string valued of “YES” or “NO”. The calling statement should display the value in a label; 3.) Returns a string of all the prime factors for the inputted number. The calling statement should display the string in a label.
