@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Methods
 {
 	public partial class Form1 : Form
 	{
+		List<int> divisible = new List<int>();
+		List<int> factors = new List<int>();
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -36,7 +34,86 @@ namespace Methods
 			 * NOTE - There should only be three lines of excue statements here in addition 
 			 * to the myNum edclaration. All calculations are performed in the functions.
 			 */
+		    listBox1.Items.Clear();
+			divisible.Clear();
+			factors.Clear();
+			prime(myNum);
+			divisibleList();
+			if (factors.Contains(myNum))
+			{
+				lblPrime.Text = "Yes";
+			}
+			else
+			{
+				lblPrime.Text = "No";
+			}
+			foreach (int i in divisible)
+			{
+				listBox1.Items.Add(i);
+			}
+			string tempPrime = "";
+			string tempFormat = "";
+		    for (int i = factors.Count; i > 0; i--)
+			{
+				tempFormat = factors[i-1] + " ";
+				tempPrime += tempFormat;
+			}
 
+
+			lblFactors.Text = tempPrime;
+
+
+		}
+
+		public void prime(int myNum)
+		{
+
+
+			for (int i = myNum; i > 0; i--)
+			{
+				if (myNum % i == 0)
+				{
+					divisible.Add(i);
+				}
+
+			}
+		}
+
+		public void divisibleList()
+		{
+				foreach (int i in divisible)
+				{
+					findPrime(i);
+				}
+		
+		}
+
+		public void findPrime(int num)
+		{
+
+			int num1 = num;
+
+			//Console.WriteLine("Accept number:");
+			//num1 = Convert.ToInt32(Console.ReadLine());
+			if (num1 == 0 || num1 == 1)
+			{
+				Console.WriteLine(num1 + " is not prime number");
+				Console.ReadLine();
+			}
+			else
+			{
+				for (int a = 2; a <= num1 / 2; a++)
+				{
+					if (num1 % a == 0)
+					{
+						Console.WriteLine(num1 + " is not prime number");
+						return;
+					}
+
+				}
+				Console.WriteLine(num1 + " is a prime number");
+				factors.Add(num1);
+			}
 		}
 	}
 }

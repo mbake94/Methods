@@ -1,0 +1,10 @@
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\bin\Debug\Methods.exe.config
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\bin\Debug\Methods.exe
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\bin\Debug\Methods.pdb
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.csprojResolveAssemblyReference.cache
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.Form1.resources
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.Properties.Resources.resources
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.csproj.GenerateResource.Cache
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.exe
+C:\Users\AndrewCanDoAll\Source\Repos\Methods\Methods\obj\Debug\Methods.pdb
